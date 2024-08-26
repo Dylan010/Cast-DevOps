@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: dy010101/cat-generator
+  tag: v1
+
+service:
+  type: LoadBalancer
+  port: 80
+
+secret:
+  name: cat-api-key
+  key: API_KEY
